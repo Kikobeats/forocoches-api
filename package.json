@@ -1,0 +1,54 @@
+{
+  "name": "forocoches-api",
+  "description": "Programatic access for Forocoches.",
+  "homepage": "https://github.com/Kikobeats/forocoches-api",
+  "version": "0.0.0",
+  "main": "lib",
+  "author": {
+    "email": "josefrancisco.verdu@gmail.com",
+    "name": "Kiko Beats",
+    "url": "https://github.com/Kikobeats"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kikobeats/forocoches-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kikobeats/forocoches-api/issues"
+  },
+  "keywords": [
+    "forocoches",
+    "api",
+    "roto2"
+  ],
+  "dependencies": {
+    "from2": "~2.3.0",
+    "simple-get": "~2.3.0"
+  },
+  "devDependencies": {
+    "coveralls": "latest",
+    "git-dirty": "latest",
+    "mocha": "latest",
+    "nyc": "latest",
+    "should": "latest",
+    "standard": "latest",
+    "standard-markdown": "latest"
+  },
+  "engines": {
+    "node": ">= 4"
+  },
+  "scripts": {
+    "clean": "rm -rf node_modules",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "lint": "standard-markdown && standard",
+    "pretest": "npm run lint",
+    "test": "nyc mocha"
+  },
+  "license": "MIT",
+  "standard": {
+    "globals": [
+      "describe",
+      "it"
+    ]
+  }
+}
