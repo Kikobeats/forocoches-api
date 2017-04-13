@@ -23,7 +23,7 @@
   ],
   "dependencies": {
     "from2": "~2.3.0",
-    "simple-get": "~2.4.0"
+    "simple-get": "~2.5.1"
   },
   "devDependencies": {
     "coveralls": "latest",
